@@ -1,8 +1,3 @@
-# MS Disability Progression Prediction — Conda environment
-# Create with:    conda env create -f environment.yml
-# Activate:       conda activate ms-progression
-# Update:         conda env update -f environment.yml --prune
-# Remove:         conda remove --name ms-progression --all
 
 name: ms-progression
 channels:
