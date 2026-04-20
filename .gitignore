@@ -1,0 +1,133 @@
+# =============================================================================
+#  .gitignore for ms-progression-prediction
+#
+#  CRITICAL:
+#    The dataset must NEVER be committed.
+#    The assessment brief explicitly states: "Do not publish the dataset on
+#    the repository."
+#
+#    The patterns below ensure that no .xlsx, .xls, or .csv data files in
+#    the data/ directory are ever staged.
+# =============================================================================
+
+# ─── Data: NEVER COMMIT ─────────────────────────────────────────────────────
+data/*.xlsx
+data/*.xls
+data/*.csv
+data/*.tsv
+data/*.parquet
+data/*.feather
+data/*.h5
+data/*.npz
+data/*.pkl
+# Keep the documentation file
+!data/README.md
+!data/.gitkeep
+
+# ─── Pipeline outputs ───────────────────────────────────────────────────────
+outputs/
+!outputs/.gitkeep
+
+# Per-task output directories at any depth (e.g., during development)
+**/task2_outputs/
+**/task3_outputs/
+**/task4_outputs/
+**/task5_outputs/
+**/task6_outputs/
+
+# Standalone CSV / image artefacts produced during ad-hoc runs
+task*_*.csv
+task*_*.xlsx
+task*_*.png
+task*_*.pdf
+task*_*.jpg
+fig_*.png
+fig_*.pdf
+
+# Don't ignore figures/ that we explicitly want under version control
+!figures/**
+
+# ─── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# ─── Jupyter ────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+profile_default/
+ipython_config.py
+
+# ─── Testing & coverage ─────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# ─── Type checkers / linters ────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.dmypy.json
+dmypy.json
+
+# ─── IDEs / editors ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── OS ─────────────────────────────────────────────────────────────────────
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ─── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ─── LaTeX (if drafting in repo) ────────────────────────────────────────────
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.synctex.gz
+*.toc
+*.bcf
+*.run.xml

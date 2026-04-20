@@ -1,0 +1,33 @@
+# MS Disability Progression Prediction — Python dependencies
+# Tested on Python 3.10 and 3.12.
+# Install with:    pip install -r requirements.txt
+
+# ─── Core scientific stack ──────────────────────────────────────────────────
+numpy>=1.26,<2.2
+pandas>=2.1,<2.3
+scipy>=1.11,<1.15
+
+# ─── I/O ────────────────────────────────────────────────────────────────────
+openpyxl>=3.1,<3.2          # for reading/writing .xlsx
+xlrd>=2.0,<2.1              # legacy .xls fallback (optional)
+
+# ─── Plotting ───────────────────────────────────────────────────────────────
+matplotlib>=3.8,<3.10
+
+# ─── Classical ML ───────────────────────────────────────────────────────────
+scikit-learn>=1.4,<1.6
+
+# ─── Gradient boosting ──────────────────────────────────────────────────────
+catboost>=1.2,<1.3
+
+# ─── Survival analysis ──────────────────────────────────────────────────────
+scikit-survival>=0.22,<0.25
+
+# ─── Deep learning (TCN model) ──────────────────────────────────────────────
+# CPU-only is sufficient. For GPU support, install via the pytorch index:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+torch>=2.1,<2.5
+
+# ─── Notebook support (optional, used by notebooks/) ────────────────────────
+jupyter>=1.0
+ipykernel>=6.25
