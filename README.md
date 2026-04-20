@@ -61,10 +61,7 @@ ms-progression-prediction/
 │   ├── task5_pipeline.py
 │   ├── task6_survival.py
 │   └── task6_figure.py
-│
-├── notebooks/
-│   └── Task_2_9_clean.ipynb       ← canonical notebook (cells 15 + 21 + others)
-│
+|
 ├── data/
 │   └── README.md                  ← explains where to place data_original.xlsx
 │   └── data_original.xlsx         ← NOT COMMITTED (.gitignored)
@@ -93,12 +90,12 @@ ms-progression-prediction/
 
 ## Quick start
 
-For users who already have Python 3.10+ and `pip`:
+For users who already have Python 3.12+ and `pip`:
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url> ms-progression-prediction
-cd ms-progression-prediction
+git clone https://github.com/rrmahtabali-rana/Longitudinal-prediction-of-disability-progression-in-MS.git
+cd Longitudinal-prediction-of-disability-progression-in-MS
 
 # 2. Create and activate a virtual environment (recommended)
 python -m venv .venv
