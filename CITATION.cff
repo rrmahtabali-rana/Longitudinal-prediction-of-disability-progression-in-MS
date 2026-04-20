@@ -9,34 +9,7 @@ authors:
   - given-names: Mahtab
     family-names: Ali
     email: rrmahtabali@gmail.com
-repository-code: 'https://github.com/<your-username>/ms-progression-prediction'
-abstract: >-
-  Longitudinal analysis and machine-learning prediction of disability
-  progression in multiple sclerosis (MS). Implements landmark-based
-  classification (Logistic Regression, Temporal Convolutional Network,
-  CatBoost) and survival analysis (Cox Proportional Hazards, Random
-  Survival Forest) on a multi-centre Slovenian cohort, with strict
-  patient-level data splitting, isotonic calibration, and patient-clustered
-  bootstrap confidence intervals.
-keywords:
-  - multiple sclerosis
-  - disability progression
-  - magnetic resonance imaging
-  - machine learning
-  - survival analysis
-  - CatBoost
-  - random survival forest
+repository-code: repository-code: 'https://github.com/rrmahtabali-rana/Longitudinal-prediction-of-disability-progression-in-MS'
 license: MIT
 version: 1.0.0
-date-released: '2026-04-19'
-references:
-  - type: article
-    authors:
-      - family-names: D'hondt
-        given-names: ''
-    title: >-
-      Explainable time-to-progression predictions in multiple sclerosis
-    journal: Computer Methods and Programs in Biomedicine
-    volume: '263'
-    year: 2025
-    doi: 10.1016/j.cmpb.2025.108624
+date-released: '2026-04-20'
