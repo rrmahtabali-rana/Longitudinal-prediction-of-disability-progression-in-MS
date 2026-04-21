@@ -1,14 +1,3 @@
-# =============================================================================
-#  .gitignore for ms-progression-prediction
-#
-#  CRITICAL:
-#    The dataset must NEVER be committed.
-#    The assessment brief explicitly states: "Do not publish the dataset on
-#    the repository."
-#
-#    The patterns below ensure that no .xlsx, .xls, or .csv data files in
-#    the data/ directory are ever staged.
-# =============================================================================
 
 # ─── Data: NEVER COMMIT ─────────────────────────────────────────────────────
 data/*.xlsx
